@@ -7,9 +7,10 @@ import os
 # App Config.
 #----------------------------------------------------------------------------#
 
-# database_name = "Casting_Agency"
-# database_path = "postgres://{}/{}".format('localhost:5432', database_name)
-database_path = os.environ['DATABASE_URL']
+database_path = os.environ.get('DATABASE_URL')
+if database_path is None:
+    database_name = "Casting_Agency"
+    database_path = "postgres://{}/{}".format('localhost:5432', database_name)
 
 db = SQLAlchemy()
 
