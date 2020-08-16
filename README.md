@@ -201,9 +201,11 @@ python test_app.py
 - Casting_Assistant:
     - `get:actors`, `get:movies`
 - Casting_Director:
-    - `get:actors`, `get:movies`, `post:actors`, `patch:actors`, `patch:movies` `delete:actors`
+    - `get:actors`, `patch:actors`, `post:actors`, `delete:actors`
+    - `get:movies`, `patch:movies`, 
 - Executive Producer (all permissions):
-    - `get:actors`, `get:movies`, `post:actors`, `post:movies`, `patch:actors`, `patch:movies`, `delete:actors`, `delete:movies`
+    - `get:actors`, `patch:actors`, `post:actors`, `delete:actors`
+    - `get:movies`, `patch:movies`, `post:movies`, `delete:movies`
 - Right-clicking the collection folder for Casting_Assistant, Casting_Director and Executive_Producer, navigate to the authorization tab, and replace the JWT in the token field if expired.
 - Run the collection and correct any errors.
 

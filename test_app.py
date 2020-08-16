@@ -6,7 +6,7 @@ import json
 
 
 #----------------------------------------------------------------------------#
-# Tokens need uddat if expired.
+# Tokens need update if expired.
 #----------------------------------------------------------------------------#
 
 CASTING_ASSISTANT_TOKEN  = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5FLTlYVVd4S0dnY1hWbEZBY1o5dSJ9.eyJpc3MiOiJodHRwczovL3BldGVyLWNvZmZlZS1zaG9wLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZjM4MTBiNzhmMThhYTAwNjg5ZDdlOTAiLCJhdWQiOiJjYXN0aW5nX2FnZW5jeSIsImlhdCI6MTU5NzU3MTg0NCwiZXhwIjoxNTk3NjU4MjQ0LCJhenAiOiJhcE9lY1NJcEY4azV6SVplODdUMzJCS1hqdVZKNUx0WSIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiXX0.Na9D0GaLj5ftRVaUFKkyz207MjXCvntlFDYFNV7arBhnXktfLPTD8CmTjKUl7BW_6N7I4bVOXCpOjcjKo3_PYNvetzoMJVljzcxb0KkM-z2YcI0uDlcILvRbhRxU0zVOIo1gjZGoHRkGBeGHmPE5FSMdeA4Om85yzdRh_fSnHmrF3Cp1j9JfEHCye4IxjDpxcMEZAKlJJp8hCn7CAsgaVVL6ShaWLcOWb9a96LygnoPoAfjdpiWOgHgeBt0RSv-HUBAIHFhomjWmZ_058g-Rz6LwhXm5umuZavcW3G5Ozg4cs6Tt3w-m1QG3k1gX9BQVQayBVLRyx2GpbWL-q4YrfA'
