@@ -1,4 +1,3 @@
-DATABASE_URL=postgres://zkbukaqijybbny:e2839af1d864857cd374f6d897548fd36fa9300ce6f7b27ed342cdca6f177fef@ec2-54-197-254-117.compute-1.amazonaws.com:5432/d30tklik4dlrve
-
+DATABASE_URL=postgres://ftockgszheszxs:e75e740612c6f4693c0de96998f95538fa50c3730668e6943e0f80f97c7e34c0@ec2-34-236-215-156.compute-1.amazonaws.com:5432/d44rtd432rttqd
 AUTH0_DOMAIN=peter-coffee-shop.us.auth0.com
 API_AUDIENCE=casting_agency
