@@ -197,13 +197,13 @@ python test_app.py
 ### Test remote server using Postman
 
 - Import the postman collection: postman_test_run/Capstone_Casting_Agency.postman_collection.json
-- This collection has 3 roles:
-    - Casting_Assistant:
-        `get:actors`, `get:movies`
-    - Casting_Director:
-        `get:actors`, `get:movies`, `post:actors`, `patch:actors`, `patch:movies` `delete:actors`
-    - Executive Producer (all permissions):
-        `get:actors`, `get:movies`, `post:actors`, `post:movies`, `patch:actors`, `patch:movies`, `delete:actors`, `delete:movies`
+- This collection has 3 roles.
+- Casting_Assistant:
+    - `get:actors`, `get:movies`
+- Casting_Director:
+    - `get:actors`, `get:movies`, `post:actors`, `patch:actors`, `patch:movies` `delete:actors`
+- Executive Producer (all permissions):
+    - `get:actors`, `get:movies`, `post:actors`, `post:movies`, `patch:actors`, `patch:movies`, `delete:actors`, `delete:movies`
 - Right-clicking the collection folder for Casting_Assistant, Casting_Director and Executive_Producer, navigate to the authorization tab, and replace the JWT in the token field if expired.
 - Run the collection and correct any errors.
 
