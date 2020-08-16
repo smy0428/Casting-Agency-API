@@ -6,9 +6,9 @@ from jose import jwt
 from urllib.request import urlopen
 
 
-AUTH0_DOMAIN = os.environ.get('AUTH0_DOMAIN')
+AUTH0_DOMAIN = os.environ.get('AUTH0_DOMAIN', 'peter-coffee-shop.us.auth0.com')
 ALGORITHMS = ['RS256']
-API_AUDIENCE = os.environ.get('API_AUDIENCE')
+API_AUDIENCE = os.environ.get('API_AUDIENCE', 'casting_agency')
 
 
 #----------------------------------------------------------------------------#
@@ -71,6 +71,7 @@ def verifty_decode_jwt(token):
     jwks = json.loads(josnurl.read())
 
     unverified_header = jwt.get_unverified_header(token)
+
     rsa_key = {}
     if 'kid' not in unverified_header:
         raise AuthError({
@@ -97,6 +98,7 @@ def verifty_decode_jwt(token):
                 audience = API_AUDIENCE,
                 issuer = 'https://' + AUTH0_DOMAIN + '/'
             )
+
             return payload
 
         except jwt.ExpiredSignatureError:

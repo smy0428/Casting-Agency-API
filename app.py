@@ -139,7 +139,6 @@ def create_app(test_config=None):
             abort(422)
         title = body.get('title')
         release_date = body.get('release_date')
-        print(title, release_date)
 
         if title is None or release_date is None:
             abort(422)
