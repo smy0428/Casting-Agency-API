@@ -6,7 +6,7 @@ The Casting Agency models a company that is responsible for creating movies and 
 
 ## API Reference
 
-#### Endpoints
+### Endpoints
 
 `GET '/actors'`
 - Fetches a list of actors
@@ -42,7 +42,7 @@ The Casting Agency models a company that is responsible for creating movies and 
     'movies':[
         {
             'id': 1,
-            'title': 'Taitanic',
+            'title': 'Titanic',
             'release_date': '1997-12-19'
         },
         {
@@ -85,7 +85,7 @@ The Casting Agency models a company that is responsible for creating movies and 
 - Example argument:
 ```
 {
-    'title': 'Taitanic',
+    'title': 'Titanic',
     'release_date': '1997-12-19'
 }
 ```
@@ -96,7 +96,7 @@ The Casting Agency models a company that is responsible for creating movies and 
     'movies':
     {
         'id': 1,
-        'title': 'Taitanic',
+        'title': 'Titanic',
         'release_date': '1997-12-19'
     }
 }
@@ -171,7 +171,7 @@ The Casting Agency models a company that is responsible for creating movies and 
 }
 ```
 
-#### Error Handling
+### Error Handling
 
 Errors are returned as JSON objects in the following format:
 ```
@@ -184,7 +184,7 @@ Errors are returned as JSON objects in the following format:
 
 ## Testing
 
-#### Test API locally using command line tool
+### Test API locally using command line tool
 
 - Tokens in test_app.py need update if expired.
 - To run the tests locally, run
@@ -194,7 +194,7 @@ createdb casting_agency_test
 python test_app.py
 ```
 
-#### Test remote server using Postman
+### Test remote server using Postman
 
 - Import the postman collection: postman_test_run/Capstone_Casting_Agency.postman_collection.json
 - This collection has 3 roles:
@@ -211,17 +211,17 @@ python test_app.py
 
 The following section explains how to set up and run the project locally.
 
-#### Installing Dependencies
+### Installing Dependencies
 
-###### Python 3.7
+#### Python 3.7
 
 Follow instructions to install the latest version of python for your platform in the [python docs](https://docs.python.org/3/using/unix.html#getting-and-installing-the-latest-version-of-python)
 
-###### Virtual Environment
+#### Virtual Environment
 
 We recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organized. Instructions for setting up a virtual environment for your platform can be found in the [python docs](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
-###### PIP Dependencies
+#### PIP Dependencies
 
 Once you have your virtual environment setup and running, install dependencies by navigating to the `/backend` directory and running:
 
@@ -231,7 +231,7 @@ pip install -r requirements.txt
 
 This will install all of the required packages we selected within the `requirements.txt` file.
 
-###### Key Dependencies
+#### Key Dependencies
 
 - [Flask](http://flask.pocoo.org/)  is a lightweight backend microservices framework. Flask is required to handle requests and responses.
 
@@ -241,7 +241,7 @@ This will install all of the required packages we selected within the `requireme
 
 - [jose](https://python-jose.readthedocs.io/en/latest/) JavaScript Object Signing and Encryption for JWTs. Useful for encoding, decoding, and verifying JWTS.
 
-#### Database Setup in Postgres
+### Database Setup in Postgres
 
 With Postgres running, create a database:
 
@@ -249,7 +249,7 @@ With Postgres running, create a database:
 createdb Casting_Agency
 ```
 
-#### Running the server
+### Running the server
 
 From within the root directory first ensure you are working using your created virtual environment.
 
